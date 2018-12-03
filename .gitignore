@@ -1,0 +1,10 @@
+*.aux
+*.log
+*.h
+*.cc
+*.sh
+*.m
+*.tex
+*.out
+*.o
+*.bin
