@@ -3,7 +3,7 @@
 if [ -e "_problemS/.ced" ];
 then
   git add --all
-  git commit -m "progress"
+  git commit -m "végleges változat, csak hiba esetén mod."
   git push origin master
 else
   echo "(possibly) unencrypted files...exit\n"
