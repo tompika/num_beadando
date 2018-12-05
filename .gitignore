@@ -1,7 +1,6 @@
 *.aux
 *.log
 *.h
-*.sh
 *.m
 *.tex
 *.out
