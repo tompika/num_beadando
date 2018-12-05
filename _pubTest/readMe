@@ -1,0 +1,16 @@
+g++ checker.cc -o checker
+cp in* and out* into io/
+
+python:
+./testItAll main.py python[2|3]
+
+java:
+javac main.java
+./testItAll mainclass java
+
+c/c++
+g++ main.cc -o main
+./testItAll main
+
+
+

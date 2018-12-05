@@ -1,4 +1,10 @@
 #!/bin/bash
-git add --all
-git commit -m "progress"
-git push origin master
+
+if [ -e ".ced" ];
+then
+  git add --all
+  git commit -m "progress"
+  git push origin master
+else
+  echo "possibly unencrypted...exit\n"
+fi
