@@ -37,6 +37,7 @@ do
    else
    	echo "OK     in${n}"
    fi
+  echo "----------------------------------------"
 done
 rm __otmP
 echo ""

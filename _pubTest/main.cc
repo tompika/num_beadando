@@ -12,7 +12,7 @@ int main(){
   int n;scanf("%d",&n);
   while(n--){
     int k;scanf("%d",&k);
-    printf("%d\n",f(k));
+    printf("%d\n",f(k)+1);
   }
   return 0;
 }

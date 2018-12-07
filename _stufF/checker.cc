@@ -53,7 +53,7 @@ int main(int npar, char** par){
          }
       }else{//float
          sscanf(wJ,"%lf",&tJ);
-         if(1!=sscanf(wJ,"%lf",&tC)){
+         if(1!=sscanf(wC,"%lf",&tC)){
             fprintf(stderr,"expected a float, got %s\n",wJ);
             exitCode=2;
             break;
