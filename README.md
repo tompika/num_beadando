@@ -1,3 +1,8 @@
+* news:
+  * Az in1@Gershgorin hibás, ignoráld. Köszönöm Zarnescu Krisztián-nak 
+  a jelzést!
+
+
 bash alapú tesztelő.
 használat:
 
@@ -26,6 +31,3 @@ ha valamelyik eset FAIL, akkor az nem jó.
     g++ main.cc -o main<br>
     ./testItAll main
 
-* UPDATES
-  * Az in1@Gershgorin hibás, ezzel ne tesztelj. Köszönöm Zarnescu Krisztián-nak 
-  a jelzést!
