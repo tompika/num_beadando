@@ -25,3 +25,7 @@ ha valamelyik eset FAIL, akkor az nem jó.
   * egyebkent:<br>
     g++ main.cc -o main<br>
     ./testItAll main
+
+* UPDATES
+  * Az in1@Gershgorin hibás, ezzel ne tesztelj. Köszönöm Zarnescu Krisztián-nak 
+  a jelzést!
