@@ -8,8 +8,8 @@ használat:
 
 * A változat, ez csak c esetén próbáltam:
   * cd _testboX
-  * ./testItAll pathToExe pathToProblem
-    * ./testItAll ./main ../_problemS/BelsoSzorzat<br>
+  * ./testItAll pathToProblem pathToExe
+    * ./testItAll  ../_problemS/BelsoSzorzat ./main <br>
 ez az adott problema összes io-jára lefuttatja a main-t, <br>
 ha valamelyik eset FAIL, akkor az nem jó.
 
