@@ -41,27 +41,28 @@ int main(int npar, char** par){
 
    while(1==fscanf(fJ,"%s",wJ)){
       if( 1 != fscanf(fC,"%s",wC)){
+         fprintf(stderr,"incomplete output\n");
          exitCode=1;
          break;
       }
 
       if(isalpha(wJ[0])){//sztring
          if(strcmp(wJ,wC)){
-            exitCode=1;
+            exitCode=2;
             fprintf(stderr,"string mismatch\n");
             break;
          }
       }else{//float
          sscanf(wJ,"%lf",&tJ);
          if(1!=sscanf(wC,"%lf",&tC)){
-            fprintf(stderr,"expected a float, got %s\n",wJ);
-            exitCode=2;
+            fprintf(stderr,"expected a float, got %s\n",wC);
+            exitCode=3;
             break;
          }
 
          if(abs(tJ-tC)>fTOL){
             fprintf(stderr,"float not within tolerance\n");
-            exitCode=3;
+            exitCode=4;
             break ;
          }
       }
