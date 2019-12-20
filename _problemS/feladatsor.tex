@@ -1,0 +1,104 @@
+\documentclass[]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[colorlinks=true]{hyperref}
+\usepackage{amsmath,amssymb,multicol}
+
+\newcounter{Pontok}
+\newcommand{\hreFF}[2]{
+\href{#1}{\color{blue}#2}
+}
+
+
+\begin{document}
+\begin{itemize}
+\item A lenti témakörökből kell néhány problémát  megoldani Python-ban.
+\item Minden feladatnál 0-nak tekintendő az az $x$ lebegőpontos szám, melyre
+$\texttt{abs}(x)<10^{-12}$ !
+\item A kimenetben levő újsorok és egyéb "whitespace"-ek tekintetében nincs megkötés. Azaz
+ha el akarsz választani két tokent (szám stb.), mindegy hogy egy \texttt{space}-el, vagy 100 \texttt{tab}-bal + 10
+\texttt{newline}-nal teszed.
+\end{itemize}
+
+
+\begin{itemize}
+   \item[A] Vektor-mátrix műveletek, alapmódszerek
+      \begin{itemize}
+         \item[] \hreFF{BelsoSzorzat/desc/desc.pdf}{ Belső szorzat } \dotfill
+         \addtocounter{Pontok}{1}1
+         \item[] \hreFF{MatrixVektor/desc/desc.pdf}{Mátrix-vektor szorzás} \dotfill
+         \addtocounter{Pontok}{2}2
+         \item[] \hreFF{MatrixMatrix/desc/desc.pdf}{Mátrix-mátrix szorzás} \dotfill
+         \addtocounter{Pontok}{2}2
+         \item[] \hreFF{Matrix1Norma/desc/desc.pdf}{1-norma} \dotfill
+         \addtocounter{Pontok}{2}2
+         \item[] \hreFF{MatrixInfNorma/desc/desc.pdf}{$\infty$-norma} \dotfill
+         \addtocounter{Pontok}{2}2
+         \item[] \hreFF{Horner/desc/desc.pdf}{Horner módszer} \dotfill
+         \addtocounter{Pontok}{2}2
+      \end{itemize}
+
+   \item[B] Mátrix algoritmusok
+      \begin{enumerate}
+         \item[]  \hreFF{Cond/desc/desc.pdf}{Kondíciószám} \dotfill
+         \addtocounter{Pontok}{10}10
+         \item[]  \hreFF{LU/desc/desc.pdf}{LU felbonás} \dotfill
+         \addtocounter{Pontok}{10}10
+         \item[]  \hreFF{Chol/desc/desc.pdf}{Cholesky felbonás} \dotfill
+         \addtocounter{Pontok}{10}10
+         \item[]  \hreFF{M2x2Norma2/desc/desc.pdf}{$2\times 2$ Mátrix 2-normája} \dotfill
+         \addtocounter{Pontok}{2}2
+         \item[]  \hreFF{Gershgorin/desc/desc.pdf}{Inverz létezése (Gersgorin)} \dotfill
+         \addtocounter{Pontok}{2}2
+      \end{enumerate}
+
+   \item[C] Numerikus integrálás
+      \begin{itemize}
+         \item[] \hreFF{Trapez/desc/desc.pdf}{Trapéz módszer } \dotfill
+         \addtocounter{Pontok}{3}3
+         \item[] \hreFF{Simpson/desc/desc.pdf}{Simpson módszer} \dotfill
+         \addtocounter{Pontok}{4}4
+      \end{itemize}
+
+   \item[D] Nemlineáris függvények gyöke és fixpontja
+      \begin{itemize}
+         \item[] \hreFF{Felezo/desc/desc.pdf}{Felező módszer} \dotfill
+         \addtocounter{Pontok}{3}3
+         \item[] \hreFF{NewtonPoly/desc/desc.pdf}{Newton módszer polinomra} \dotfill
+         \addtocounter{Pontok}{6}6
+         \item[] \hreFF{Szelo/desc/desc.pdf}{Szelő módszer} \dotfill
+         \addtocounter{Pontok}{5}5
+         \item[] \hreFF{FixPont/desc/desc.pdf}{Fixpont módszer} \dotfill
+         \addtocounter{Pontok}{6}6
+      \end{itemize}
+
+
+   %~ \item[] Közelítés és interpoláció
+      %~ \begin{itemize}
+         %~ \item[] Közelítés legkisebb négyzetek módszerével.
+            %~ {A legjobban közelítő $G$ típusú fv. $A_0,A_1,A_2,A_3$ együtthatói}
+         %~ \item[] Lagrange interpoláció
+            %~ {a Newton formában adott polinom együtthatói csökkenő fokszám szerint}
+      %~ \end{itemize}
+
+   \item[E] Interpoláció
+    \begin{itemize}
+         \item[] \hreFF{Lagrange/desc/desc.pdf}{Lagrange interpoláció}\dotfill
+         \addtocounter{Pontok}{10}10
+    \end{itemize}
+
+
+   \item $\sum$\dotfill {\bf \thePontok}
+      \begin{itemize}
+         \item[] Az összpontszám $40$ százalékát kell megszerezni.
+      \end{itemize}
+
+
+\end{itemize}
+
+%~ $$
+%~ F(x)=C_0*e^{C_1 x}+C_2 \sin(C_3 x)+C_4 \cos(C_5 x)+C_6 \sin(e^{C_7 x})
+%~ $$
+%~ $$
+%~ G(x)=A_0*e^{C_0 x}+A_1 \sin(C_1 x)+A_2 \cos(C_2 x)+A_3 \sin(e^{C_3 x})
+%~ $$
+\end{document}

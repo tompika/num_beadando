@@ -1,0 +1,43 @@
+\input{../../shared.tex}
+
+\begin{document}
+
+\centerline{\bf Trapéz-módszer }
+\noindent Osszuk fel az $[a,b]$ intervallumot $m$-egyenlő részre és 
+közelítsük az $\int_{a}^{b}F(s)dx$-et összetett Trapéz-formulával.
+\[ 
+F(x)=C_0*e^{C_1 x}+C_2 \sin(C_3 x)+C_4 \cos(C_5 x)+C_6 \sin(e^{C_7 x})
+\]
+
+\noindent
+{\bf Input}
+\begin{flalign*}
+& C_0\ldots C_7\: &\\
+& a\: b\: m&\\
+\end{flalign*}
+
+
+\noindent
+{\bf Output}
+\begin{flalign*}
+& \text{Trapéz}(F,a,b,m) &
+\end{flalign*}
+
+
+\noindent
+{\bf Korlátok}\newline
+$0<n<100.$
+A kiírt számok {\bf 12} értékes jegyet tartalmazzanak!
+
+
+
+\noindent
+{\bf PéldaInput}
+\verbatiminput{../io/in1}
+
+\noindent
+{\bf PéldaOutput}
+\verbatiminput{../io/out1}
+
+
+\end{document}

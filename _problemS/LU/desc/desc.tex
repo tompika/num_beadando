@@ -1,0 +1,46 @@
+\input{../../shared.tex}
+
+
+\begin{document}
+
+\centerline{\bf Mátrix LU felbontása }
+\noindent Egy $n\times n$-es $A=(a_{ij})$ mátrix $LU$ felbontását kell kiszámolni. 
+A sorcsere {\it nem} megengedett! Ennél a feladatnál nem kell abbahagyni a felbontás 
+létrehozását ha $a_{ii}\approx 0$, csak akkor ha alatta van nemnulla elem! Az $LU$ felbontást egy mátrixban 
+számoljuk és írjuk ki. Ha nincs felbontás, a \texttt{fail} sztring kerül az outputba.
+
+
+\noindent
+{\bf Input}
+\begin{flalign*}
+& n &\\
+& a_{11}\ldots a_{1 n}&\\
+& \ldots & \ldots\\
+& a_{n 1}\ldots a_{n n}&\\
+\end{flalign*}
+
+
+\noindent
+{\bf Output}
+\begin{flalign*}
+& \text{lásd a leírást} &
+\end{flalign*}
+
+
+\noindent
+{\bf Korlátok}\newline
+$0<n<100.$ 
+A kiírt számok {\bf 12} értékes jegyet tartalmazzanak!
+
+
+
+\noindent
+{\bf PéldaInput}
+\verbatiminput{../io/in14}
+
+\noindent
+{\bf PéldaOutput}
+\verbatiminput{../io/out14}
+
+
+\end{document}

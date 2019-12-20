@@ -1,0 +1,53 @@
+\input{../../shared.tex}
+
+
+\begin{document}
+
+\centerline{\bf Fixpont-iteráció }
+\noindent Az $F$ függvény fixpontját közelítjük $x_0$ pontból indulva,
+ legfeljebb $s$ lépést végezve. Az iterációt hagyjuk abba a $k$. lépésnél 
+ha azt tapasztaljuk hogy 
+\begin{equation}
+\label{Mctr}
+\tag{Mctr}
+|x_{k}-x_{k-1}|<|x_{k-1}-x_{k-2}|<\ldots <|x_{k-M+1}-x_{k-M}| 
+\end{equation}
+\noindent azaz, folyamatos $M$ hosszú csökkenés látható a szomszédos elemek távolságában.
+Ha $x_k=\pm\infty,\texttt{Nan}$ vagy \textit{\eqref{Mctr}} nem teljesült, 
+akkor a \texttt{fail} sztringet, egyébként $x_k$-t írjuk ki.
+\[ 
+F(x)=C_0*e^{C_1 x}+C_2 \sin(C_3 x)+C_4 \cos(C_5 x)+C_6 \sin(e^{C_7 x})
+\]
+
+\noindent
+{\bf Input}
+\begin{flalign*}
+& C_0\ldots C_7\: &\\
+& x_{0}\: s\: M&\\
+\end{flalign*}
+
+
+\noindent
+{\bf Output}
+\begin{flalign*}
+& \text{lásd a leírást} &
+\end{flalign*}
+
+
+\noindent
+{\bf Korlátok}\newline
+$0<2*M<S<100.$
+A kiírt számok {\bf 12} értékes jegyet tartalmazzanak!
+
+
+
+\noindent
+{\bf PéldaInput}
+\verbatiminput{../io/in1}
+
+\noindent
+{\bf PéldaOutput}
+\verbatiminput{../io/out1}
+
+
+\end{document}

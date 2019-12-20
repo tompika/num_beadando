@@ -1,0 +1,50 @@
+\input{../../shared.tex}
+
+\begin{document}
+
+\centerline{\bf Newton-módszer polinomra }
+\noindent Közelítsük egy $n$ fokú $p$ polinom gyökét, $x_0$ kezdőpontból $m$ lépést végezve! 
+Ha $x_m=\pm\infty,\texttt{NaN}$ akkor a \texttt{fail} sztringet írjuk ki!
+
+
+\noindent
+{\bf Input}
+\begin{flalign*}
+& n\: x_0\: m  &\\
+& p_n \ldots p_1 \: p_0\\
+& 
+\end{flalign*}
+
+
+\noindent
+{\bf Output}
+\begin{flalign*}
+& x_m &
+\end{flalign*}
+
+
+\noindent
+{\bf Korlátok}\newline
+$0<m,n<100.$ A kiértékeléseket Horner-módszerrel végezzük!
+A kiírt számok {\bf 12} értékes jegyet tartalmazzanak!
+
+
+
+\noindent
+{\bf PéldaInput1}
+\verbatiminput{../io/in1}
+
+\noindent
+{\bf PéldaOutput1}
+\verbatiminput{../io/out1}
+
+\noindent
+{\bf PéldaInput2}
+\verbatiminput{../io/in7}
+
+\noindent
+{\bf PéldaOutput2}
+\verbatiminput{../io/out7}
+
+
+\end{document}

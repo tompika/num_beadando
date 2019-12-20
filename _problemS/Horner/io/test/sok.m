@@ -1,0 +1,10 @@
+maketest(2,10,"10")
+maketest(12,22,"2")
+maketest(22,99,"3")
+maketest(33,56,"4")
+maketest(3,10,"5")
+maketest(99,45,"6")
+maketest(9,99,"7")
+maketest(19,66,"8")
+maketest(1,0,"9")
+

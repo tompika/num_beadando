@@ -1,10 +1,1 @@
-_nb/feladatok.py
-*_diak
-*.aux
-*.log
-*.h
-*.m
-*.tex
-*.out
-*.o
-*.bin
+*.cc

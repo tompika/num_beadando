@@ -1,0 +1,48 @@
+\input{../../shared.tex}
+
+\begin{document}
+
+\centerline{\bf Cholesky felbontás }
+\noindent Ha a szimmetrikus $A$-nak létezik a Cholesky-felbontása 
+akkor írjuk ki az alsó háromszög alakú faktorát, egyébként a 
+\texttt{fail} sztringet. A mátrix alsó háromszögrésze az input.
+
+
+\noindent
+{\bf Input}
+\begin{flalign*}
+& n &\\
+& a_{11}\\
+& a_{21}\: a_{22}\\
+& \ldots \\
+& a_{n 1}\ldots a_{n n}\\
+\end{flalign*}
+
+
+\noindent
+{\bf Output}
+\begin{flalign*}
+& q_{11}&\\
+& q_{21}\: q_{22}&\\
+& \ldots& \\
+& q_{n 1}\ldots q_{n n}&\\
+\end{flalign*}
+
+
+\noindent
+{\bf Korlátok}\newline
+$1<n<100$. 
+A kiírt számok {\bf 12} értékes jegyet tartalmazzanak!
+
+
+
+\noindent
+{\bf PéldaInput}
+\verbatiminput{../io/in29}
+
+\noindent
+{\bf PéldaOutput}
+\verbatiminput{../io/out29}
+
+
+\end{document}

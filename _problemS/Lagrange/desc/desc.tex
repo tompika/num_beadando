@@ -1,0 +1,46 @@
+\input{../../shared.tex}
+
+
+\begin{document}
+
+\centerline{\bf Lagrange interpoláció }
+\noindent Adott $(t_1,f_1),\ldots,(t_n,f_n)$ pontok esetén határozzuk meg azt a minimális fokszámú 
+$p$ polinomot, 
+melyre $p(t_k)=f_k$, majd értékeljük ki $x_1,\ldots,x_m$ helyeken! 
+
+\noindent
+{\bf Input}
+\begin{flalign*}
+& n &\\
+& t_1\: f_1 \\
+& \ldots \\
+& t_n\: f_n \\
+& m &\\
+& x_1\ldots x_m\\
+\end{flalign*}
+
+
+\noindent
+{\bf Output}
+\begin{flalign*}
+& p(x_1)\ldots p(x_m)&
+\end{flalign*}
+
+
+\noindent
+{\bf Korlátok}\newline
+$1<n<50$. 
+A kiírt számok {\bf 12} értékes jegyet tartalmazzanak!
+
+
+
+\noindent
+{\bf PéldaInput}
+\verbatiminput{../io/in0}
+
+\noindent
+{\bf PéldaOutput}
+\verbatiminput{../io/out0}
+
+
+\end{document}
