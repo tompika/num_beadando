@@ -2,4 +2,4 @@
 * pontosítás: vannak a beépített eljárások a fenti feladatokra a [num/sci]py-ben-
 ha ezeket használva oldod meg a feladatokat akkor az jóval kevesebb munka - kb. 50-60% 
 pontot gondolok érte.<br>
-[feladatsor](problems/feladatsor.pdf)
+* a [feladatsor](problems/feladatsor.pdf)
