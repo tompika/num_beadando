@@ -6,7 +6,7 @@
 - [ ] Mátrix-mátrix szorzás :two:
 - [ ] Mátrix 1-norma :two:
 - [ ] Mátrix ∞-norma :two: 
-- [ ] Horner módszer :two:
+- [x] Horner módszer :two:
 
 ## Mátrix algoritmusok
 - [ ] Mátrix kondíciószáma :one::zero:

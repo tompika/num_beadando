@@ -1,21 +1,25 @@
+#!/usr/bin/env python3
 
-def poly_naive(A, x):
-    p = 0
-    for i, a in enumerate(A):
-        p += (x ** i) * a
-    return p
+def horner(poly, n, x):
+    result = poly[0]
+
+    for i in range(1, n):
+        result = result * x + poly[i]
+
+    return result
 
 def main():
 
     n = int(input())
     v = list(map(float, input().strip().split(' ')))
     m = int(input())
-    w = list(map(float, input().strip().split(' ')))
+    x_list = list()
+    for i in range(0, m):
+        x_list.append(float(input()))
 
-    res = poly_naive(v)
-
-
-    print("%.12f" % round(res, 8))
+    for x in x_list:
+        res = horner(v, len(v), x)
+        print("%.12f" % res)
 
 if __name__ == '__main__':
     main()
