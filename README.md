@@ -2,7 +2,7 @@
 
 ## Vektor-mátrix műveletek, alapmódszerek
 - [ ] Belső szorzat :one:
-- [ ] Mátrix-vektor szorzás :two:
+- [x] Mátrix-vektor szorzás :two:
 - [ ] Mátrix-mátrix szorzás :two:
 - [ ] Mátrix 1-norma :two:
 - [ ] Mátrix ∞-norma :two: 
