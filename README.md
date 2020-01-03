@@ -1,9 +1,9 @@
 # Numerikus módszerek beadandó - levelező
 
 ## Vektor-mátrix műveletek, alapmódszerek
-- [ ] Belső szorzat :one:
+- [x] Belső szorzat :one:
 - [x] Mátrix-vektor szorzás :two:
-- [ ] Mátrix-mátrix szorzás :two:
+- [x] Mátrix-mátrix szorzás :two:
 - [ ] Mátrix 1-norma :two:
 - [ ] Mátrix ∞-norma :two: 
 - [x] Horner módszer :two:
