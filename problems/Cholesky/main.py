@@ -2,52 +2,19 @@
 
 import math
 
+def choleskyFelbontas(A):
+    L = [[0.0] * len(A) for _ in range(len(A))]
 
-def transpose(mat, tr, N):
-    for i in range(N):
-        for j in range(N):
-            tr[i][j] = mat[j][i]
-
-def isSymmetric(mat, N):
-
-    tr = [[0 for j in range(len(mat[0]))] for i in range(len(mat))]
-
-    transpose(mat, tr, N)
-
-    for i in range(N):
-        for j in range(N):
-            if (mat[i][j] != tr[i][j]):
-                return False
-    return True
-
-def cholesky_felbontas(matrix, n):
-
-    lower = [[0 for x in range(n + 1)]
-             for y in range(n + 1)];
-
-    for i in range(n):
-        for j in range(i + 1):
-            sum1 = 0
-
-            if (j == i):
-                for k in range(j):
-                    sum1 += pow(lower[j][k], 2)
-                    try:
-                        lower[j][j] = int(math.sqrt(matrix[j][j] - sum1))
-                    except ValueError:
-                        if not isSymmetric(matrix, n):
-                            lower = "fail"
-
-            else:
-
-                for k in range(j):
-                    sum1 += (lower[i][k] * lower[j][k])
-                if (lower[j][j] > 0):
-                    lower[i][j] = int((matrix[i][j] - sum1) /
-                                      lower[j][j])
-
-
-        return lower
+    for i, (Ai, Li) in enumerate(zip(A, L)):
+        for j, Lj in enumerate(L[:i + 1]):
+            s = sum(Li[k] * Lj[k] for k in range(j))
+            try:
+                Li[j] = math.sqrt(Ai[i] - s) if (i == j) else \
+                    (1.0 / Lj[j] * (Ai[j] - s))
+            except ZeroDivisionError:
+                L = "fail"
+                return L
+    return L
 
 def main():
 
@@ -62,9 +29,11 @@ def main():
         matrix.append(line)
 
     #print(matrix)
-    res = cholesky_felbontas(matrix, n)
+    res = choleskyFelbontas(matrix)
 
-    if sum(map(sum, res)) == 0:
+    if type(res) == str:
+        print("fail")
+    elif res[-1][-1] <= 0.0:
         print("fail")
     else:
         for i in range(n):
