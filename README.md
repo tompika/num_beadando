@@ -4,14 +4,14 @@
 - [x] Belső szorzat :one:
 - [x] Mátrix-vektor szorzás :two:
 - [x] Mátrix-mátrix szorzás :two:
-- [ ] Mátrix 1-norma :two:
-- [ ] Mátrix ∞-norma :two: 
+- [x] Mátrix 1-norma :two:
+- [x] Mátrix ∞-norma :two: 
 - [x] Horner módszer :two:
 
 ## Mátrix algoritmusok
-- [ ] Mátrix kondíciószáma :one::zero:
-- [ ] Mátrix LU felbonása :one::zero:
-- [ ] Mátrix Cholesky felbontása :one::zero:
+- [x] Mátrix kondíciószáma :one::zero:
+- [x] Mátrix LU felbonása :one::zero:
+- [x] Mátrix Cholesky felbontása :one::zero:
 - [ ] 2 × 2es Mátrix 2-normája :two:
 - [ ] Inverz létezése (Gersgorin) :two:
 
