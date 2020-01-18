@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-def matrix_matrix_mulptiplication(A, B):
+def matrix_matrix_multiplication(A, B):
 
     result = [[0.0 for i in range(len(B[0]))] for j in range(len(A))]
 
@@ -37,7 +37,7 @@ def main():
     #print("B\n", B)
     #print("\n")
 
-    c = matrix_matrix_mulptiplication(A, B)
+    c = matrix_matrix_multiplication(A, B)
 
     for i in range(len(c)):
         for j in range(len(c[0])):
